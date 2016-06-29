@@ -4,6 +4,8 @@ class TextTest
 
     font = Moon::Font.new('resources/fonts/uni0553/uni0553-webfont.ttf', 16)
     @text = Moon::Text.new font, "Hello, World", color: Moon::Vector4.new(1, 1, 1, 1)
+
+    p [@text.w, @text.h]
   end
 
   def update(delta)
